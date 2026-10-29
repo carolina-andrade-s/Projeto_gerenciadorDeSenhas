@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerenciador de Senhas</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <main class="pagina">
+    <h1>Gerenciador de senhas</h1>
+    <p class="aviso">Projeto de estudo: as senhas ficam salvas só neste navegador, sem criptografia. Não use senhas reais.</p>
+
+    <section class="cartao">
+      <h2>Gerar senha</h2>
+
+      <div class="linha">
+        <input type="text" id="senhaGerada" readonly placeholder="Clique em &quot;Gerar senha&quot;">
+        <button type="button" id="botaoCopiarGerada">Copiar</button>
+      </div>
+
+      <label class="tamanho">
+        Tamanho: <strong id="valorTamanho">12</strong>
+        <input type="range" id="tamanho" min="6" max="32" value="12">
+      </label>
+
+      <div class="opcoes">
+        <label><input type="checkbox" id="usarMaiusculas" checked> Maiúsculas</label>
+        <label><input type="checkbox" id="usarMinusculas" checked> Minúsculas</label>
+        <label><input type="checkbox" id="usarNumeros" checked> Números</label>
+        <label><input type="checkbox" id="usarSimbolos"> Símbolos</label>
+      </div>
+
+      <button type="button" id="botaoGerar" class="principal">Gerar senha</button>
+    </section>
+
+    <section class="cartao">
+      <h2>Salvar senha</h2>
+      <form id="formulario">
+        <input type="text" id="site" placeholder="Site ou app (ex.: Instagram)" required>
+        <input type="text" id="usuario" placeholder="Usuário ou e-mail" required>
+        <input type="text" id="senha" placeholder="Senha (a gerada aparece aqui)" required>
+        <button type="submit" class="principal">Salvar</button>
+      </form>
+    </section>
+
+    <section class="cartao">
+      <h2>Senhas salvas</h2>
+      <p id="mensagemVazia">Nenhuma senha salva ainda.</p>
+      <ul id="lista"></ul>
+    </section>
+
+    <p id="status" role="status"></p>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

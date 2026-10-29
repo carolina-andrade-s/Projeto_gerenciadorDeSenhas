@@ -1,0 +1,169 @@
+/* Estilo do Gerenciador de Senhas */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #eaf0f3;
+  color: #1c2b33;
+}
+
+.pagina {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.7rem;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+}
+
+.aviso {
+  margin: 0 0 20px;
+  padding: 10px 12px;
+  background: #fff4d6;
+  border-left: 4px solid #d99a00;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.cartao {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b9c7cf;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+button:focus-visible {
+  outline: 3px solid #7fc8c0;
+  outline-offset: 1px;
+}
+
+form input {
+  margin-bottom: 10px;
+}
+
+.linha {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tamanho {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.tamanho input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.opcoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 1px solid #0f766e;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0f766e;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e3f3f1;
+}
+
+button.principal {
+  width: 100%;
+  background: #0f766e;
+  color: #ffffff;
+}
+
+button.principal:hover {
+  background: #0b5e57;
+}
+
+button.perigo {
+  border-color: #b3261e;
+  color: #b3261e;
+}
+
+button.perigo:hover {
+  background: #fdeceb;
+}
+
+/* Lista de senhas salvas */
+
+#lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#lista li {
+  padding: 12px 0;
+  border-top: 1px solid #dde5ea;
+}
+
+#lista li:first-child {
+  border-top: none;
+}
+
+.item-site {
+  font-weight: 600;
+}
+
+.item-usuario {
+  color: #52656f;
+  font-size: 0.9rem;
+}
+
+.item-senha {
+  margin: 6px 0 8px;
+  font-family: Consolas, monospace;
+  word-break: break-all;
+}
+
+.item-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.item-botoes button {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+#status {
+  min-height: 1.4em;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #0f766e;
+}
