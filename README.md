@@ -27,3 +27,4 @@ gerenciador-senhas/
 
 Projeto de estudo. As senhas ficam no `localStorage` do navegador, sem criptografia.
 Não guarde senhas reais aqui.
+# Projeto_gerenciadorDeSenhas
